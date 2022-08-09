@@ -7,11 +7,17 @@ int main(){
     int temporary_var;
     int i = 0;
     int j = 1;
-    while(j != 21){
+    int count = 0;
+    while(j != 377){
         printf("%d ", i);
         temporary_var = i;
+        
         i = j;
-        j = temporary_var + j;
-    } 
+        j += temporary_var; //Can be written as j = temporary_var + j
+        count++;
+        if( count % 5 == 0){
+            printf("\n");
+        }
+    }
     return 0;
 }
