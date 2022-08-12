@@ -10,11 +10,11 @@ int main(){
     printf("Enter a temperature in degrees Fahrenheit: " );
     scanf("%d", &temp);
     
-    float celsius_temp = ((temp - 32) * float(5/9));
+    double celsius_temp = ((temp - 32) * (5.0/9.0));
     
-    float kelvin_temp = (celsius_temp + 273.15);
+    double kelvin_temp = (celsius_temp + 273.15);
 
     printf( "The given temperature was %d. This converted into Celsius and Kelvin is:\n", temp);
-    printf("    Celsius: %f\n    Kelvin: %f\n", celsius_temp, kelvin_temp);
+    printf("    Celsius: %.2lf\n    Kelvin: %.2lf\n", celsius_temp, kelvin_temp);
     return 0;
 }
