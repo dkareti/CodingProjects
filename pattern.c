@@ -8,7 +8,7 @@ int main(){
         for(int i = 0; i < j; i++){
             printf("%s ", "*");
         }
-        for(int temp = 0; temp < count*2; temp++){
+        for(int temp = 0; temp < count*4; temp++){
             printf(" ");
         } 
         
@@ -26,7 +26,7 @@ int main(){
         for(int k = 0; k < j; k++){
             printf("%s ", "*");
         }
-        for(int temp2 = 0; temp2 < count*2; temp2++){
+        for(int temp2 = 0; temp2 < count*4; temp2++){
             printf(" ");
         }
 
