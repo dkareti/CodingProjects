@@ -4,24 +4,27 @@
 #include <stdio.h>
 
 int main(){
-    printf("\n%s\n", "The following numbers are the first thirteen \nvalues in the fibonacci sequence: \n"); 
+    printf("\n%s\n", "The following numbers are the first twenty values in the fibonacci sequence:       "); 
     int temporary_var;
     int i = 0;
-    int j = 1;
+    int j = i + 1;
 
-    int count = 0; //Variable count used for formatting output
+    int count = i; //Variable count used for formatting output
 
-    while(j != 377){
-        printf("%s %d: %d\n", "Value number", count+1 , i);
-        temporary_var = i;
+    for(int m = 0; m < 20; m++){
+        if(count < 9){
+            printf("%s %d %s %d\n", "Number", count+1 , "in the sequence:          ", i);
+        }
+        else{
+            printf("%s %d %s %d\n", "Number", count+1 , "in the sequence:         ", i);
+        }
         
+        temporary_var = i;
         i = j;
         j += temporary_var; //Can be written as j = temporary_var + j
 
         count += 1;
-        if(count == 13){
-            printf("\n");
-        }
     }
+    printf("\n");
     return 0;
 }
