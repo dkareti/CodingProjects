@@ -1,15 +1,23 @@
+#variables used within the sequence
 i = 0
-j = 1
-count = 0
-print("\nThe first 13 values of the fibonacci sequence:")
+j = i + 1
 
-while( j != 377):
-    print("Value number " + str(count+1) +":  "+ str(i))
+#variable used to format the output
+count = i
+
+print("\nThe first 20 values of the fibonacci sequence:")
+
+#The fibonacci sequence:
+for m in range(20):
+    if(count < 9):
+        print("Number " + str(count+1) +" in the sequence:  "+ str(i))
+    else:
+        print("Number " + str(count+1) +" in the sequence: " + str(i))
+   
     temporary_var = i
-
     i = j
     j += temporary_var
+
     count += 1
-    if count == 13:
-        print()
+print()
     
