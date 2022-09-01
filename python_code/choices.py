@@ -30,7 +30,7 @@ try:
             i = 0
             j = i + 1
             for m in range(20):
-                print(i)
+                print("Value number " + str(m+1) + " is " + str(i) )
                 temp_var = i
                 i = j
                 j += temp_var
