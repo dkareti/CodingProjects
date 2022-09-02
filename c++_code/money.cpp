@@ -4,12 +4,9 @@
 #include <iostream>
 
 int main(){ 
-   std::cout << "This Program takes currency in dollars and outputs the amount in terms of quarters, dimes, and pennies\n";
+   std::cout << "\nThis Program takes currency in cents and outputs the amount in terms of quarters, dimes, and pennies\n";
    
-    int dollars;
     int cents;
-    std::cout << "\nEnter the dollar amount (DD.XX):";
-    std::cin >> dollars;
 
     std::cout << "\nEnter the cents amount (XX.CC):";
     std::cin >> cents;
@@ -18,14 +15,14 @@ int main(){
         return 1;
     }
     else if(cents > 100){
-        dollars += 1;
         cents = cents % 100;
     } 
    
-    int num_of_dimes = cents / 10;
-    int num_quarters = 4 * dollars;
-    int num_of_pennies = cents % 10;
+    int num_of_quarters = cents / 25;
+    int remainder = cents % 25;
+    int num_of_dimes = remainder / 10;
+    int num_of_pennies = remainder % 10;
 
-    std::cout << "The amount given is equivalent to: " << num_quarters << " quarters, " << num_of_dimes << " dimes, and " << num_of_pennies << " pennies\n";
+    std::cout << "The amount given is equivalent to: " << num_of_quarters << " quarter(s), " << num_of_dimes << " dime(s), and " << num_of_pennies << " pennie(s)\n";
     return 0;
 }
