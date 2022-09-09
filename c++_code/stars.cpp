@@ -30,6 +30,14 @@ int main(){
         std::cout << " * ";
     } 
     std::cout << "\n";
+    for(int j = 0; j < number; j+=2){
+        std::cout << " * ";
+    } 
+    std::cout << "\n";
+    for(int i = 0; i < number; i++){
+        std::cout << " * ";
+    } 
+    std::cout << "\n";
     
     return 0;
 }
