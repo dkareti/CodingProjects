@@ -1,3 +1,6 @@
+#Author: Daniel Kareti
+#Modified on : 3/18/25
+
 import random
 
 New = ["apple", "pear", "banana", "racecar", "orange", "dog", "hat"]

@@ -1,6 +1,8 @@
 #############
 
 #This file mimics a password interface
+#Author: Daniel Kareti
+#Modified on: 3/18/25
 
 ############
 

@@ -1,6 +1,9 @@
+#Author : Daniel Kareti
+#Modified on 3/18/25
+
 #reading input from user in python
 
-temp = input("Enter a temperature in degrees Fahrenheit: ")
+temp = int(input("Enter a temperature in degrees Fahrenheit: "))
 
 temp_celsius = (int(temp) - 32) * float(5/9)
 

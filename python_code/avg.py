@@ -1,3 +1,7 @@
+#########
+#Created on 3/18/25
+#Author: Daniel Kareti
+
 def main():
     classes = ["Math", "Science", "English", "CS"]
 

@@ -1,7 +1,9 @@
+#created by Daniel Kareti
+#modified on 3/18/25
 
 #decreasing pattern
-j = 5;
-count = 0;
+j = 5
+count = 0
 while( j > 0):
     for i in range(j):
         print("* ", end = ' ')
@@ -11,8 +13,8 @@ while( j > 0):
         print("* ", end = ' ')
 
     print()
-    j -= 1;
-    count += 1;
+    j -= 1
+    count += 1
 
 #at the end of this block j == 1 And count == 4
 
@@ -26,4 +28,4 @@ while(j < 6):
         print("* ", end = ' ')
     print()
     j += 1
-    count -= 1;
+    count -= 1
